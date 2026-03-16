@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نموذج حجز كتاكيت</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+    padding: 20px;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+}
+label { font-weight: bold; }
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+</style>
+</head>
+ 
+<body>
+<h2 style="text-align:center;">نموذج حجز كتاكيت</h2>
+ 
+<form action="send.php" method="POST">
+    <label>الصنف:</label>
+    <select name="type" required>
+        <option value="أبيض">أبيض</option>
+        <option value="بلدي">بلدي</option>
+        <option value="ساسو">ساسو</option>
+        <option value="روزي">روزي</option>
+        <option value="بط مسكوفي">بط مسكوفي</option>
+        <option value="بط بغال">بط بغال</option>
+        <option value="بط فرنساوي">بط فرنساوي</option>
+    </select>
+ 
+    <label>العدد:</label>
+    <input type="number" name="count" required>
+ 
+    <label>الاسم:</label>
+    <input type="text" name="name" required>
+ 
+    <label>رقم الهاتف:</label>
+    <input type="text" name="phone" required>
+ 
+    <button type="submit">إرسال الحجز</button>
+</form>
+ 
+</body>
+</html>
